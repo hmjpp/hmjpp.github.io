@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 	<head>
@@ -12,7 +13,7 @@
 		<script src="js/popper.min.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="twibbon/croppie.js"></script>
-		<link rel="stylesheet" href="twibbon/croppie.css">
+		<link rel="stylesheet" href="twibbon/croppie2.css">
 		<script>
 			
 		$(document).ready(function(){
@@ -92,7 +93,7 @@
 						context.drawImage(image2,0,0,1080,1080);
 						var canvas = document.getElementById('canvas');
 						var imagepreview = document.getElementById('imagepreview');
-						imagepreview.src=canvas.toDataURL("twibbon/AgricultureDynamic.png");
+						imagepreview.src=canvas.toDataURL("image/png");
 						
 					}
 				}
@@ -123,7 +124,7 @@
 			#twibbon{
 				background-repeat:no-repeat; 
 				background-size:cover;
-				background-image: url(twibbon/medkom.png);
+				background-image: url(twibbon/placeholder-user.png);
 				width: 300px !important;height: 300px !important;position: relative;margin:0 auto;
 			}
 			.overlay {
@@ -136,7 +137,7 @@
 			height: 100%;
 			width: 100%;
 			z-index: 2;
-			background-image:url(twibbon/AgricultureDynamic.png);
+			background-image:url(twibbon/Twibbon\ EPC.png);
 			background-repeat:no-repeat;
 			background-size: contain;
 			background-position: top left;
