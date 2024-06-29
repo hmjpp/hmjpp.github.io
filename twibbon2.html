@@ -17,7 +17,7 @@
 		<script>
 			
 		$(document).ready(function(){
-		var twibbonurl="twibbon/AgricultureDynamic.png";;
+		var twibbonurl="twibbon/Agriculture Dynamic.png";;
 		// Initialized Croppie
 		var croppie_div = $("#image").croppie({
 		viewport: {
@@ -103,7 +103,7 @@
 		$('.downloadimage').on('click', function(e) {
 			var canvas= document.getElementById('canvas');
 			var link = document.createElement('a');
-			link.download = "Twibbon Result.png";
+			link.download = "Twibbon Agriculture Dynamic.png";
 			link.href = canvas.toDataURL("image/png");
 			link.click();
 		});
@@ -137,7 +137,7 @@
 			height: 100%;
 			width: 100%;
 			z-index: 2;
-			background-image:url(twibbon/AgricultureDynamic.png);
+			background-image:url(twibbon/Agriculture Dynamic.png);
 			background-repeat:no-repeat;
 			background-size: contain;
 			background-position: top left;
@@ -174,8 +174,8 @@
 								
 								<input id="fileinput" type="file" accept="image/gif, image/jpeg, image/png" style="display: none" />
 								
-								<label for="fileinput" class="btn btn-primary" style="margin:0"><span class="fa fa-upload"></span> Upload Gambar</label>
-								<button class="generatetwibbon btn btn-primary" data-toggle="modal" data-target="#modal"><span class="fa fa-gear"></span> Buat</button><br/><br/>
+								<label for="fileinput" class="btn btn-primary" style="margin:0"></span>Upload Foto</label><br/>
+								<button class="generatetwibbon btn btn-primary" data-toggle="modal" data-target="#modal"></span>Download</button><br/>
 								
 								
 
@@ -187,11 +187,11 @@
 										<div class="modal-body text-center">
 											<canvas id="canvas" width="1080" height="1080" style="display:none;">
 											</canvas>
-											<img src="#" id="imagepreview" class="img-fluid" alt="Foto Anda"/>
+											<img src="#" id="imagepreview" class="img-fluid" alt="Twibbon Result"/>
 										</div>
 										<div class="modal-footer">
-											<button type="button" class="btn btn-success downloadimage" ><span class="fa fa-download"></span> Download</button><br/>
-											<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="fa fa-close"></span> Close</button>
+											<button type="button" class="btn btn-success downloadimage" ></span>Download</button><br/>
+											<button type="button" class="btn btn-danger" data-dismiss="modal"></span>Close</button>
 										</div>
 									</div>
 								</div>
